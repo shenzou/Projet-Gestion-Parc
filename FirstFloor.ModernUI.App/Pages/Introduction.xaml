@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="FirstFloor.ModernUI.App.Pages.Introduction"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid Style="{StaticResource ContentRoot}">
+        <ScrollViewer>
+            <StackPanel >
+                <TextBlock Text="Logiciel de gestion de Zombillenium." Style="{StaticResource Heading1}" Margin="0,0,0,8"/>
+                <mui:BBCodeBlock BBCode="Nous vous présentons le premier prototype de notre logiciel de gestion pour [b]Zombillenium[/b].&#13;&#10;&#13;&#10;En cliquant sur l'onglet [url=/Content/ajoutPerso.xaml][b]gestion[/b][/url], vous pourrez consulter l'état actuel de développement.&#13;&#10;&#13;&#10;Vous pouvez effectuer de nombreuses tâches telles que [url=/Content/AjoutAttraction.xaml][b]l'ajout[/b][/url] d'une attraction, d'un membre du personnel, [url=/Content/ListeTypes.xaml][b]changer ses propriétés[/b][/url] (affectation, cagnotte...). vous pouvez également [url=/Content/ListeTypes.xaml][b]consulter[/b][/url] la liste de personnel, d'attractions.&#13;&#10;&#13;&#10;Toutes les informations modifiées sont stockées dans une [url=/Pages/LayoutBDDRead.xaml][b]base de données en ligne[/b][/url] et peuvent être consultées depuis n'importe quel ordinateur. Il est également possible d'exporter la liste modifiée dans un CSV, et de lire un autre fichier CSV." Margin="0,0,0,32" />
+                <TextBlock Text="APPARENCE" Style="{StaticResource Heading2}" />
+                <mui:BBCodeBlock BBCode="L'apparence de l'interface peut être modifiée. Consultez l'onglet [url=/Pages/Settings.xaml][b]paramètres[/b][/url] pour personnaliser l'apparence." Margin="0,0,0,32"/>
+                <Button Name="ChargementCSV" Content="Ouvrir un CSV" Click="ChargementCSV_Click" Width="250"/>
+                <Button Name="ExportCSV" Content="Enregistrer le CSV" Click="ExportCSV_Click" Width="250"/>
+                <TextBlock Name="Infos" Text=""/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

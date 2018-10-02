@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="FirstFloor.ModernUI.App.Content.ListeTypes"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             xmlns:app="clr-namespace:FirstFloor.ModernUI.App"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <mui:ModernTab SelectedSource="/Content/PersonnelDataGrid.xaml" Layout="List">
+            <mui:ModernTab.Links>
+                <mui:Link DisplayName="Personnel" Source="/Content/PersonnelDataGrid.xaml" />
+                <mui:Link DisplayName="Monstres" Source="/Content/MonstresDataGrid.xaml"/>
+                <mui:Link DisplayName="Sorciers" Source="/Content/SorciersDataGrid.xaml"/>
+                <mui:Link DisplayName="Zombies" Source="/Content/ZombiesDataGrid.xaml"/>
+                <mui:Link DisplayName="Vampires" Source="/Content/VampiresDataGrid.xaml"/>
+                <mui:Link DisplayName="LoupGarous" Source="/Content/LoupGarousDataGrid.xaml"/>
+                <mui:Link DisplayName="Demons" Source="/Content/DemonsDataGrid.xaml"/>
+                <mui:Link DisplayName="Fantomes" Source="/Content/FantomesDataGrid.xaml"/>
+                <mui:Link DisplayName="Attractions" Source="/Content/AttractionsDataGrid.xaml" />
+                <mui:Link DisplayName="RollerCoasters" Source="/Content/RollerCoastersDataGrid.xaml"/>
+                <mui:Link DisplayName="Spectacles" Source="/Content/SpectaclesDataGrid.xaml"/>
+                <mui:Link DisplayName="DarkRides" Source="/Content/DarkRidesDataGrid.xaml"/>
+                <mui:Link DisplayName="Boutiques" Source="/Content/BoutiquesDataGrid.xaml"/>
+
+                
+          
+
+            </mui:ModernTab.Links>
+            
+            <!-- ensures new LoremIpsum content is loaded for each uri -->
+            
+        </mui:ModernTab>
+    </Grid>
+</UserControl>
